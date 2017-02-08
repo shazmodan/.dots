@@ -1,0 +1,38 @@
+[include]
+    path = .gitconfig.user
+ 
+[alias]
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    s = status
+    a = add --all
+    apply-gitignore = git ls-files -i --exclude-from=.gitignore | xargs git rm --cached  
+    tfs = "!f() { git clone http://tfs2010at.ifint.biz/tfs/TFS2008Collection/Waypoint%20Online%20Sales/_git/$1; }; f"
+    lg = log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'
+ 
+[diff]    
+    tool = diffmerge
+ 
+[difftool]
+    prompt = false
+
+[difftool "diffmerge"]
+    cmd = "C:/Program\\ Files/SourceGear/Common/DiffMerge/sgdm.exe" "$LOCAL" "$REMOTE" //t 
+    keepbackup = false 
+    trustexistcode = true
+
+[merge]
+    tool = diffmerge
+ 
+[mergetool]
+    prompt = false
+
+[mergetool "diffmerge"]
+    cmd = "C:/Program\\ Files/SourceGear/Common/DiffMerge/sgdm.exe" "$LOCAL" "$REMOTE" "$BASE" "$MERGED" //m
+    keepbackup = false
+    trustexistcode = true
+
+[url "https://"]  
+    insteadOf = git://
+  
+[http]
+    proxy = http://europe\\USER\\PASSWORD@193.34.40.30:8080

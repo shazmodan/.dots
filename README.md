@@ -6,4 +6,4 @@ Lists all active IIS applicationPools with their corresponding Id. Useful when u
 
 ### Bash
 ```grep -rl "string" /path ```
-Find all files *recursively (-r)* and *only print filenames of matching files (-l)*, and not the matching lines.
+Find all files matching "string" *recursively (-r)* and *only print filenames of matching files (-l)*, and not the matching lines.

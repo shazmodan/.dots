@@ -16,7 +16,7 @@
     prompt = false
 
 [difftool "diffmerge"]
-    cmd = "C:/Program\\ Files/SourceGear/Common/DiffMerge/sgdm.exe" "$LOCAL" "$REMOTE" //t 
+    cmd = "C:/Program\\ Files/SourceGear/Common/DiffMerge/sgdm.exe" \"$LOCAL\" \"$REMOTE\"
     keepbackup = false 
     trustexistcode = true
 
@@ -27,7 +27,7 @@
     prompt = false
 
 [mergetool "diffmerge"]
-    cmd = "C:/Program\\ Files/SourceGear/Common/DiffMerge/sgdm.exe" "$LOCAL" "$REMOTE" "$BASE" "$MERGED" //m
+    cmd = "C:/Program\\ Files/SourceGear/Common/DiffMerge/sgdm.exe" -merge -result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
     keepbackup = false
     trustexistcode = true
 

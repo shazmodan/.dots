@@ -1,0 +1,8 @@
+{
+    "window.zoomLevel": 0,
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.projectDetection.autoReload": true,
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4,
+    "workbench.editor.enablePreviewFromQuickOpen": false
+}

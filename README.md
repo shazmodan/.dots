@@ -16,4 +16,4 @@ Clears temporary NuGet packages, freeing disk space.
 
 ### Git
 ``` git log -g --grep=stringToFindInCommitMessages ```
-Find all commits that contains <stringToFindInCommitMessages>
+Find all commits that contains stringToFindInCommitMessages

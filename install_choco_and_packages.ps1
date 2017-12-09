@@ -22,6 +22,7 @@ choco install nodejs.install
 choco install yarn
 choco install dotnet3.5
 choco install dotnet4.5
+choco install dotnetcore-sdk
 choco install urlrewrite
 
 #IIS7

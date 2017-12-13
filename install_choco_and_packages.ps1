@@ -4,7 +4,11 @@ Set-ExecutionPolicy Unrestricted
 # Chocolatey
 iex ((new-object net.webclient).DownloadString('http://bit.ly/psChochoco installall'))
 
+# Enable global confirmation. No more pressing YES between each install.
+choco feature enable -n allowGlobalConfirmation
+
 # install applications
+choco install cygwin
 choco install python2
 choco install python3
 choco install git

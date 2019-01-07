@@ -23,3 +23,18 @@ Remove remote branches (sync with your team first!). Warning permanent!
 ### Git
 ``` git log -g --grep=stringToFindInCommitMessages ```
 Find all commits that contains stringToFindInCommitMessages
+
+#### Git Delete Branches
+Add (-e ”my-branch”) on all branches you want to keep.
+
+``` git branch | grep -v -e "master" -e "develop" -e "keep-this-branch" ```
+List local branches to be removed (this doesnt remove anything).
+
+``` git branch | grep -v -e "master" -e "develop" -e "keep-this-branch" | xargs git branch --delete ```
+Deletes local branches.
+
+``` git branch -r | grep origin | grep -v -e "master" -e "develop" -e "keep-this-branch" ```
+List remote branches to be removed (this does not remove anything).
+
+``` git branch -r | grep origin | grep -v -e "master" -e "develop" -e "keep-this-branch" | xargs git push origin --delete ```
+Delete remote branches (sync with your team first!). *Warning permanent!*

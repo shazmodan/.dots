@@ -18,6 +18,13 @@ Clears a potentially disk heavy Windows log.
 ``` git log -g --grep=stringToFindInCommitMessages ```
 Find all commits that contains stringToFindInCommitMessages
 
+#### Git remove stale remote branches
+``` git branch -r  ```
+Lists all branches that exists on origin/remote
+
+``` git remote prune origin  ```
+Removes the stale branches
+
 #### Git Delete Branches
 Add (-e ”my-branch”) on all branches you want to keep.
 

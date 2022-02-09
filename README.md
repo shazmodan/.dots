@@ -28,6 +28,12 @@ Removes the stale branches
 #### Git Delete Branches
 Add (-e ”my-branch”) on all branches you want to keep.
 
+``` git branch --merged | grep -v master ```
+Lists local merged branches, except for master.
+
+```git branch --merged | grep -v master | xargs git branch --delete```
+Deletes merged local branches, except for master.
+
 ``` git branch | grep -v -e "master" -e "develop" -e "keep-this-branch" ```
 List local branches to be removed (this doesnt remove anything).
 
